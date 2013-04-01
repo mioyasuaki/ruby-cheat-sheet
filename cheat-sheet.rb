@@ -31,21 +31,17 @@ p x = "hello".length
 p "hello".length
 
 
-# x = Rational(3,4)
-# x = 5 ** 2
-# x = Rational(2,3) + Rational(5,6)
+x = Rational(3,4)	# 分数 3/4という意味
+x = 5 ** 20 		# 5の20乗
+x = Rational(2,3) + Rational(5,6) # 2/3 + 5/6 という意味（分数）
 
-#p 10.5.to_i
-# p "10.5".to_i
+p 10.5.to_i		# integer に型変換 
+p "10.5".to_i	# integer に型変換 
 
-
-# p 10.4.to_r
-
-# p 10.5.round # ceil, floor
-
-# p rand(100)
-
-# p Math.sqrt(9)
+p 10.4.to_r		# 
+p 10.5.round	# ceil, floor
+p rand(100)		# 0-100 でランダム
+p Math.sqrt(9)	# Mathで、平方根
 
 
 
@@ -61,20 +57,22 @@ y = 'hello' # 展開しない
 
 # 特殊文字 ¥n ¥t
 
-puts "hello\nworld"
-puts 'hello\nworld'
+puts "hello\nworld"	# 改行が展開
+puts 'hello\nworld'	# 改行されない
 
 
 name = "mio"
-puts "my name is #{name}"
-puts "こんにちわ"
+puts "my name is #{name}"	＃ 名前が展開
+
+# coding:utf-8
+puts "こんにちわ" # 日本語出力がある場合は、# coding:utf-8 という行が必要
 
 
 
-p "hello".upcase
-p "hello".reverse
-p "hello".index("o")
-p "hello".include?""
+p "hello".upcase		# 大文字変換
+p "hello".reverse		# 文字を逆順に
+p "hello".index("o")	# o が含まれる位置を返す
+p "hello".include?"o"	# o が含まれるかどうか、 true / false
 
 
 
@@ -82,7 +80,7 @@ p "hello".include?""
 
 s = "hello"
 
-s1 = s.upcase! #破壊的メソッド
+s1 = s.upcase! # 破壊的メソッド という。 s1 = s = s.upcase っていう意味。
 
 p s
 p s1
@@ -97,11 +95,11 @@ names = ["taguchi", "fkoji", "dotinstall"]
 
 p names[1]
 
-p names[1..2] # 1〜2の配列
+p names[1..2]	# 1〜2の配列
 
-p names[0...2] # 最後は含まない配列
+p names[0...2]	# 最後は含まない配列
 
-p names[-1] # 後ろから数える
+p names[-1]		# 後ろから数える
 
 
 
@@ -118,22 +116,18 @@ p names
 
 
 
+
 # 演算子について
 
-
 a = [1,2,3,4]
-
 b = [3,4,5,6]
 
 
 # 演算子
 
 p a & b # 共通部分だけを出す
-
 p a | b # 重複しないように出す
-
 p a - b
-
 p a + b
 
 
@@ -189,12 +183,12 @@ p sales.has_value?("gaoigja")
 # 日付時間
 
 
-t = Time.now
+t = Time.now	# 現在時刻
 t = Time.mktime(2011, 2, 24, 9, 0, 0)
 
 p t
 
-p t + 10
+p t + 10 # 単位は、秒。（ミリ秒ではない）
 
 p t.strftime("%Y/%m/%d")
 
