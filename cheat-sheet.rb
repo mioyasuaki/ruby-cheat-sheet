@@ -1,4 +1,6 @@
 
+
+
 # 出力系
 
 print "Hello World", "world" #普通に表示
