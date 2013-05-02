@@ -162,7 +162,6 @@ a = [1,5,4,3,5,4,8]
 sales = {"tanaka"=>100, "taguchi"=>150, "taniguchi"=>300}
 
 p sales
-
 p sales["tanaka"]
 
 
@@ -223,7 +222,6 @@ p z
 
 score = 65
 
-
 if score >= 80
 	puts "great!"
 elsif score >= 60
@@ -237,13 +235,12 @@ end
 
 score = 65
 
-
 if score >= 80
 	puts "great!"
 end
 
-
 puts "great" if score >= 80
+
 
 
 # 条件演算子 if ...else ...
@@ -252,10 +249,8 @@ puts "great" if score >= 80
 a = 50
 b = 20
 
-
 max = a > b ? a : b # 大きいほうを返す
 min = a < b ? a : b
-
 
 puts max, min
 
@@ -268,12 +263,9 @@ puts "match!" if /taguchi/ =~ "my name is taguchi"
 
 
 
-
-
 # switch的な　case文
 
 signal = "yellow"
-
 
 case signal
 when "red"
@@ -307,16 +299,13 @@ end
 
 users = ["taguchi", "fkoji", "dotinstall"] 
 
-
 for user in users do
 	puts user
 end
 
-
 users.each do |user|
 	puts user
 end
-
 
 for i in 1..10 do
 	puts i
@@ -324,11 +313,9 @@ end
 
 
 
-
 # ハッシュに対してのループ
 
 scores = {"taguchi" => 200, "fkoji" =>300, "dotinstall"=>120} 
-
 
 scores.each do |name, score|
 	printf("%s's score is %d\n", name, score )
@@ -336,9 +323,7 @@ end
 
 
 
-
 # while 
-
 
 i = 1
 
@@ -353,13 +338,11 @@ end
 
 # メソッドの定義
 
-
 def sing
 	puts "lalala~~~"
 end
 
 sing()
-
 
 
 def sing2(word)
@@ -369,17 +352,12 @@ end
 sing2("hoge")
 
 
-
 def sing3(word="wa")
 	puts word + word + word + "~~~~"
 end
 
-
 sing3()
 sing3("hoge")
-
-
-
 
 
 def sing4(word="wa", num)
@@ -392,7 +370,6 @@ def sing4(word="wa", num)
 	return s
 end
 
-
 res = sing4("hu",20) + "fuga"
 
 p res
@@ -402,7 +379,6 @@ p res
 
 
 # クラスを作って、メソッドを定義して、インスタンスを作る
-
 
 class Monster
 
@@ -424,7 +400,6 @@ class Monster
 	end
 
 end
-
 
 
 slime = Monster.new("slime")
