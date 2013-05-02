@@ -5,6 +5,8 @@ ruby-cheat-sheet
 
 http://dotinstall.com/lessons/basic_ruby
 
+動画の中で解説されているプログラムが書いてあるでの、書き方を忘れたときに見ると、ちょっと便利かもしれません。
+
 ---
 
 ### 前提
