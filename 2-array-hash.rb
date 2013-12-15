@@ -1,5 +1,4 @@
 
-
 # 配列定義など
 
 names = ["taguchi", "fkoji", "dotinstall"]
@@ -39,6 +38,17 @@ a.push(8) #末尾に8を追加
 a.shift #先頭の値を取り出して、削除
 a.pop #末尾の値を取り出して、削除
 
+
+
+# 含むかどうか
+
+a = [1, 4, 5, 8]
+
+a.include?(5)
+#=> true
+
+a.include?(10)
+#=> false
 
 
 
